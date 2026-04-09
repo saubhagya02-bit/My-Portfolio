@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "./components/layout/Navbar";
 import About from "./components/sections/About";
-import Hero from "./components/sections/Hero"; 
+import Hero from "./components/sections/Hero";
+import Education from "./components/sections/Education";
 
 function App() {
   return (
@@ -9,9 +10,8 @@ function App() {
       <Navbar />
       <Hero />
       <main>
-        {/* Other sections like Home */}
         <About />
-        {/* Other sections like Skills, Projects, Contact */}
+        <Education />
       </main>
     </div>
   );
