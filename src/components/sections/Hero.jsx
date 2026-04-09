@@ -18,25 +18,24 @@ const Hero = () => {
 
           <FadeIn delay={200}>
             <h1 className="text-4xl md:text-6xl font-bold mt-6 leading-tight">
-              Building Modern <br />
-              Full-Stack Solutions with Precision
+              Hi! I'm Ushani <br />
+              Saubhagya
             </h1>
           </FadeIn>
 
           <FadeIn delay={400}>
             <p className="text-gray-600 dark:text-gray-400 mt-6 max-w-lg">
-              I’m Ushani, a Software Engineering undergraduate passionate about
-              building dynamic and responsive web applications. I create
-              seamless user experiences with React and modern JavaScript, while
-              powering the backend with MongoDB, MySQL, and the MERN stack. I’m
-              also expanding my expertise into DevOps, exploring Docker and AWS
-              to bring scalable, efficient solutions to life.
+              I create seamless user experiences with React and modern
+              JavaScript, while powering the backend with MongoDB, MySQL, and
+              the MERN stack. I’m also expanding my expertise into DevOps,
+              exploring Docker and AWS to bring scalable, efficient solutions to
+              life.
             </p>
           </FadeIn>
 
           <FadeIn delay={600}>
             <button className="mt-6 bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-full font-medium hover:scale-105 transition">
-              My CV
+              Download Resume
             </button>
           </FadeIn>
 
