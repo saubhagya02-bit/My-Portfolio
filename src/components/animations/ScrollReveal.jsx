@@ -1,19 +1,15 @@
-import useScrollReveal from "../../hooks/useScrollReveal";
+import { motion } from "framer-motion";
 
 const ScrollReveal = ({ children }) => {
-  const [ref, visible] = useScrollReveal();
-
   return (
-    <div
-      ref={ref}
-      className={`transition-all duration-700 ${
-        visible
-          ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-12"
-      }`}
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }} 
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
       {children}
-    </div>
+    </motion.div>
   );
 };
 

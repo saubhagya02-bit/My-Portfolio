@@ -10,9 +10,14 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full top-0 z-50 bg-black border-b border-white/10">
       <div className="max-w-full mx-auto px-4 md:px-10 h-20 flex justify-between items-center">
-        <div className="flex items-center gap-2 font-bold text-2xl tracking-tight">
+        <div
+          className="flex items-center gap-2 font-bold text-2xl tracking-tight cursor-pointer"
+          onClick={() => {
+            const hero = document.getElementById("hero");
+            if (hero) hero.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
           <span className="text-green-500 font-mono">&lt;&gt;</span>
-
           <span className="text-white">Ushani</span>
         </div>
 

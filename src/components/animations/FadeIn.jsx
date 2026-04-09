@@ -1,33 +1,28 @@
-const FadeIn = ({ children, delay = 0, direction = "up" }) => {
-  let translateClass = "";
+import { motion } from "framer-motion";
 
-  switch (direction) {
-    case "up":
-      translateClass = "translate-y-10";
-      break;
-    case "down":
-      translateClass = "-translate-y-10";
-      break;
-    case "left":
-      translateClass = "translate-x-10";
-      break;
-    case "right":
-      translateClass = "-translate-x-10";
-      break;
-    default:
-      translateClass = "translate-y-10";
-  }
+const FadeIn = ({ children, delay = 0, direction = "up" }) => {
+
+  const directions = {
+    up: { y: 40 },
+    down: { y: -40 },
+    left: { x: 40 },
+    right: { x: -40 },
+  };
+
+  const { x, y } = directions[direction] || directions.up;
 
   return (
-    <div
-      className={`opacity-0 ${translateClass} animate-fadeIn`}
-      style={{
-        animationDelay: `${delay}ms`,
-        animationFillMode: "forwards",
+    <motion.div
+      initial={{ opacity: 0, x: x || 0, y: y || 0 }}
+      animate={{ opacity: 1, x: 0, y: 0 }}
+      transition={{
+        duration: 0.6,
+        delay: delay / 1000,
+        ease: "easeOut",
       }}
     >
       {children}
-    </div>
+    </motion.div>
   );
 };
 
