@@ -25,7 +25,7 @@ const Navbar = () => {
     localStorage.setItem("theme", isDark ? "dark" : "light");
   }, [isDark]);
 
-  const sections = ["about", "skills", "projects", "blogs", "contact"];
+  const sections = ["about", "education", "skills", "projects", "blogs", "contact"];
   const active = useScrollSpy(sections);
 
   const toggleTheme = () => setIsDark(!isDark);
