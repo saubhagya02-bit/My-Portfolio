@@ -20,7 +20,7 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex justify-end gap-5 text-2xl text-gray-400 dark:text-gray-400">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/saubhagya02-bit"
               target="_blank"
               rel="noreferrer"
               className="hover:text-green-400 transition-colors duration-300"
@@ -29,7 +29,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/ushani-saubhagya-5216992a4/"
               target="_blank"
               rel="noreferrer"
               className="hover:text-green-400 transition-colors duration-300"

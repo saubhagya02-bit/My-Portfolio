@@ -4,7 +4,7 @@ import About from "./components/sections/About";
 import Hero from "./components/sections/Hero";
 import Education from "./components/sections/Education";
 import Skills from "./components/sections/Skills";
-
+import Projects from "./components/sections/Projects";
 
 import Footer from "./components/layout/Footer";
 
@@ -17,7 +17,7 @@ function App() {
         <About />
         <Education />
         <Skills />
-
+        <Projects />
 
         <Footer />
       </main>

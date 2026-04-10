@@ -5,7 +5,7 @@ const educationData = [
     degree: "Bachelor of Science in Software Engineering",
     institution: "University of Kelaniya",
     period: "2024 - Present",
-    grade: "CGPA: 3.305/4.0",
+    grade: "CGPA: 3.35/4.0",
     description:
       "Specializing in Net-Centric Web Application Development, Data Science and Engineering Application, Business Engineering Applications and Health Informatic Engineering domains.",
   },
