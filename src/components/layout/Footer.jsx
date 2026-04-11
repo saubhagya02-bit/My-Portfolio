@@ -1,7 +1,11 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowUp } from "react-icons/fa";
 import ScrollReveal from "../animations/ScrollReveal";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-white dark:bg-[#0a0a0a] text-black dark:text-white transition-colors duration-300 border-t border-gray-200 dark:border-gray-800 px-6 py-10">
       <ScrollReveal>
@@ -46,6 +50,15 @@ const Footer = () => {
               <FaEnvelope />
             </a>
           </div>
+        </div>
+
+        <div className="flex justify-end w-full">
+          <button
+            onClick={scrollToTop}
+            className="bg-green-500 hover:bg-green-600 text-white p-2 rounded-full transition duration-300"
+          >
+            <FaArrowUp size={16} />
+          </button>
         </div>
 
         {/* Copyright */}
