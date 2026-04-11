@@ -8,26 +8,26 @@ const projects = [
     title: "MERN E-Commerce Web Application",
     description:
       "Full-stack e-commerce application with authentication and payment integration.",
-    image: "/project1.jpg",
+    image: "/E-Commerce.png",
     github: "https://github.com/saubhagya02-bit/MERN_Ecommerce_App",
   },
   {
     title: "RusHome",
     description:
       "Modern responsive frontend website to browse, search and view rental properties",
-    image: "/project3.jpg",
+    image: "/RusHome.png",
     github: "https://github.com/saubhagya02-bit/RusHome",
   },
   {
     title: "ChatSphere",
     description: "Real-time chat app using WebSockets and modern UI.",
-    image: "/project2.jpg",
+    image: "/ChatSphere.png",
     github: "https://github.com/saubhagya02-bit/ChatSphere",
   },
   {
     title: "Reservation System",
     description: "Full-stack room booking platform.",
-    image: "/project2.jpg",
+    image: "/Reservation.png",
     github: "https://github.com/saubhagya02-bit/Reservation-System",
   },
   {
