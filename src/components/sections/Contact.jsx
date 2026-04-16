@@ -3,6 +3,8 @@ import ScrollReveal from "../animations/ScrollReveal";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
 import { LuSend } from "react-icons/lu";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -39,16 +41,36 @@ const Contact = () => {
 
     if (Object.keys(validationErrors).length > 0) return;
 
-    alert("Message sent successfully 🚀");
+    // EmailJS integration
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      )
+      .then(
+        () => {
+          toast.success("Message sent successfully 🚀");
 
-    setForm({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+          setForm({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
 
-    setErrors({});
+          setErrors({});
+        },
+        () => {
+          toast.error("Failed to send message ❌");
+        },
+      );
   };
 
   return (
@@ -107,6 +129,9 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid md:grid-cols-2 gap-5">
                   <div>
+                    <label className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">
+                      Name
+                    </label>
                     <input
                       type="text"
                       placeholder="Your name"
@@ -123,6 +148,9 @@ const Contact = () => {
                   </div>
 
                   <div>
+                    <label className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">
+                      Email
+                    </label>
                     <input
                       type="email"
                       placeholder="Your email"
@@ -142,6 +170,9 @@ const Contact = () => {
                 </div>
 
                 <div>
+                  <label className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">
+                    Subject
+                  </label>
                   <input
                     type="text"
                     placeholder="Subject"
@@ -160,6 +191,9 @@ const Contact = () => {
                 </div>
 
                 <div>
+                  <label className="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">
+                    Message
+                  </label>
                   <textarea
                     rows="5"
                     placeholder="Your message"

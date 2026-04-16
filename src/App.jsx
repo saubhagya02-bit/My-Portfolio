@@ -8,10 +8,12 @@ import Projects from "./components/sections/Projects";
 import Blogs from "./components/sections/Blogs";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/layout/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <div className="App">
+      <Toaster position="top-right" reverseOrder={false} />
       <Navbar />
       <Hero />
       <main>
