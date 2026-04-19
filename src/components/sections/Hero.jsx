@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center bg-white dark:bg-black text-black dark:text-white px-6 transition-colors duration-500"
+      className="min-h-screen flex items-center bg-white dark:bg-black text-black dark:text-white px-6 pt-24 pb-10 transition-colors duration-500"
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <div>
@@ -16,8 +16,8 @@ const Hero = () => {
             </span>
           </FadeIn>
 
-          <FadeIn delay={200}>
-            <h1 className="text-4xl md:text-6xl font-bold mt-6 leading-tight">
+         <FadeIn delay={200}>
+            <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mt-6 leading-tight">
               Hi! I'm Ushani <br />
               Saubhagya
             </h1>
