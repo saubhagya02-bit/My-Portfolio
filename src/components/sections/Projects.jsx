@@ -8,7 +8,7 @@ const projects = [
     title: "MERN E-Commerce Web Application",
     description:
       "Full-stack e-commerce application with authentication and payment integration.",
-    image: "/E-Commerce.png",
+    image: "/Ecommerce.png",
     github: "https://github.com/saubhagya02-bit/MERN_Ecommerce_App",
   },
   {
