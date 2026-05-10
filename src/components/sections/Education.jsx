@@ -7,7 +7,7 @@ const educationData = [
     period: "2024 - Present",
     grade: "CGPA: 3.38/4.0",
     description:
-      "Specializing in Net-Centric Web Application Development, Data Science and Engineering Application, Business Engineering Applications and Health Informatic Engineering domains.",
+      "Specializing in Net-Centric Web Application Development, Data Science and Engineering Application and Health Informatic Engineering domains.",
   },
   {
     degree: "GCE Advanced Level",
