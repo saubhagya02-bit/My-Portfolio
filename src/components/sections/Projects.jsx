@@ -12,11 +12,17 @@ const projects = [
     github: "https://github.com/saubhagya02-bit/MERN_Ecommerce_App",
   },
   {
-    title: "RusHome",
+    title: "ReserveX",
+    description: "A web-based system for booking stalls at the Colombo Book Fair.",
+    image: "/ReserveX.jpeg",
+    github: "https://github.com/saubhagya02-bit/ReserveX",
+  },
+  {
+    title: "MindBot",
     description:
-      "Modern responsive frontend website to browse, search and view rental properties",
-    image: "/RusHome.png",
-    github: "https://github.com/saubhagya02-bit/RusHome",
+      "A smart chatbot web app that allows users to interact, ask questions, and get instant responses in a clean interface.",
+    image: "/MindBot.png",
+    github: "https://github.com/saubhagya02-bit/MindBot",
   },
   {
     title: "ChatSphere",
