@@ -35,7 +35,7 @@ const Hero = () => {
 
           <FadeIn delay={600}>
             <a
-              href="/My_CV.pdf"
+              href="/Ushani Saubhagya_Software Engineer_CV.pdf"
               target="_blank"
               rel="noreferrer"
               className="inline-block mt-6 bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-full font-medium hover:scale-105 transition"
