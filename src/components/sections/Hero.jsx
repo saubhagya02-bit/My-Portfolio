@@ -16,7 +16,7 @@ const Hero = () => {
             </span>
           </FadeIn>
 
-         <FadeIn delay={200}>
+          <FadeIn delay={200}>
             <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mt-6 leading-tight">
               Hi! I'm Ushani <br />
               Saubhagya
@@ -36,14 +36,12 @@ const Hero = () => {
           <FadeIn delay={600}>
             <a
               href="/Ushani Saubhagya_Software Engineer_CV.pdf"
-              target="_blank"
-              rel="noreferrer"
+              download
               className="inline-block mt-6 bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-full font-medium hover:scale-105 transition"
             >
               Download Resume
             </a>
           </FadeIn>
-
           <FadeIn delay={800}>
             <div className="flex gap-5 mt-6 text-2xl text-gray-600 dark:text-gray-400">
               <a
