@@ -13,7 +13,8 @@ const projects = [
   },
   {
     title: "ReserveX",
-    description: "A web-based system for booking stalls at the Colombo Book Fair.",
+    description:
+      "A web-based system for booking stalls at the Colombo Book Fair.",
     image: "/ReserveX.jpeg",
     github: "https://github.com/saubhagya02-bit/ReserveX",
   },
@@ -23,6 +24,12 @@ const projects = [
       "A smart chatbot web app that allows users to interact, ask questions, and get instant responses in a clean interface.",
     image: "/MindBot.png",
     github: "https://github.com/saubhagya02-bit/MindBot",
+  },
+  {
+    title: "InkSpire",
+    description: "A DevOps-Based Microservices Blogging Platform.",
+    image: "/InkSpire.png",
+    github: "https://github.com/saubhagya02-bit/Inkspire",
   },
   {
     title: "ChatSphere",

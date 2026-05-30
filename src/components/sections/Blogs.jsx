@@ -1,7 +1,7 @@
 import ScrollReveal from "../animations/ScrollReveal";
 
 const blogs = [
-  {
+    {
     title: "Mastering Docker for Node.js",
     description:
       "A Complete Guide to Optimizing Node.js Docker Images with Multi-Stage Builds, Nginx Reverse Proxy, and AWS EC2 Free Tier Hosting.",
@@ -9,6 +9,15 @@ const blogs = [
     date: "Sep 14, 2025",
     readTime: "3 min read",
     link: "https://medium.com/@saubhagyaushani03/mastering-docker-for-node-js-2e6b79e2f9c1",
+  },
+  {
+    title: "REST API Design Best Practices Most Developers Still Get Wrong",
+    description:
+      "A practical guide to avoiding common mistakes and building scalable, clean APIs.",
+    image: "/API.png",
+    date: "May 29, 2026",
+    readTime: "5 min read",
+    link: "https://medium.com/@saubhagyaushani03/rest-api-design-best-practices-most-developers-still-get-wrong-9ec2014e4c9f",
   },
   {
     title: "Deploying a MERN E-Commerce App with Docker & AWS",
