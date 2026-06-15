@@ -20,14 +20,6 @@ const blogs = [
     link: "https://medium.com/@saubhagyaushani03/rest-api-design-best-practices-most-developers-still-get-wrong-9ec2014e4c9f",
   },
   {
-    title: "Deploying a MERN E-Commerce App with Docker & AWS",
-    description: "From Local Development to Cloud Deployment",
-    image: "/MERN.png",
-    date: "Feb 10, 2026",
-    readTime: "3 min read",
-    link: "https://medium.com/@saubhagyaushani03/deploying-a-mern-e-commerce-app-with-docker-aws-5c9ba33a27c0",
-  },
-  {
     title: "Cloud Computing",
     description: "The Future of Technology",
     image: "/Cloud-computing.png",
