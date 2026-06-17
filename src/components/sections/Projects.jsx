@@ -44,10 +44,10 @@ const projects = [
     github: "https://github.com/saubhagya02-bit/Reservation-System",
   },
   {
-    title: "Weather App",
-    description: "A web app that shows real-time weather updates for any city.",
-    image: "/Weather-App.png",
-    github: "https://github.com/saubhagya02-bit/weather-app",
+    title: "HireSense",
+    description: "An AI-powered interview preparation platform that helps users practice interviews, improve skills, and build confidence.",
+    image: "/HireSense.png",
+    github: "https://github.com/saubhagya02-bit/HireSense",
   },
 ];
 
