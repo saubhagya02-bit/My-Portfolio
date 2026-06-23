@@ -45,7 +45,7 @@ const projects = [
   },
   {
     title: "HireSense",
-    description: "An AI-powered interview preparation platform that helps users practice interviews, improve skills, and build confidence.",
+    description: "An AI-powered interview preparation platform that helps users practice interviews, improve skills and build confidence.",
     image: "/HireSense.png",
     github: "https://github.com/saubhagya02-bit/HireSense",
   },
