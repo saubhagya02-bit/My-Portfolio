@@ -13,20 +13,24 @@ const skillsData = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
       },
       {
-        name: "Tailwind CSS",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        name: "JavaScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       },
       {
-        name: "Bootstrap",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+        name: "TypeScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
       },
       {
         name: "React",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       },
       {
-        name: "JavaScript",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        name: "Tailwind CSS",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      },
+      {
+        name: "Bootstrap",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
       },
     ],
   },
@@ -36,10 +40,6 @@ const skillsData = [
       {
         name: "Java",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-      },
-      {
-        name: "PHP",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
       },
       {
         name: "Spring Boot",
@@ -54,34 +54,75 @@ const skillsData = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
         invert: true,
       },
+      {
+        name: "NestJS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
+      },
+      {
+        name: "Python",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      },
+      {
+        name: "PHP",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+      },
     ],
   },
   {
-    category: "Other Development Tools",
+    category: "Databases & Tools",
     skills: [
+      {
+        name: "MongoDB",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      },
       {
         name: "MySQL",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
       },
       {
-        name: "MongoDB",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+        name: "PostgreSQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      },
+      {
+        name: "Redis",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
       },
       {
         name: "Git",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
       },
       {
-        name: "Figma",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+        name: "GitHub",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        invert: true,
       },
       {
         name: "Docker",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
       },
       {
+        name: "Linux",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+      },
+      {
+        name: "AWS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+      },
+      {
+        name: "VS Code",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+      },
+      {
         name: "Postman",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+      },
+      {
+        name: "Figma",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      },
+      {
+        name: "Canva",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg",
       },
     ],
   },
@@ -98,25 +139,28 @@ const Skills = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black dark:text-white">
             Skills
           </h2>
+
           <p className="text-center text-gray-500 dark:text-gray-400 text-sm mb-12">
             Here are the technologies and tools I work with
           </p>
         </ScrollReveal>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
           {skillsData.map((group, index) => (
             <ScrollReveal key={index}>
               <div className="border border-gray-200 dark:border-gray-800 rounded-xl p-6 bg-gray-50 dark:bg-white/5 hover:border-green-500 dark:hover:border-green-400 transition-colors duration-300 h-full">
                 <h3 className="text-base font-bold text-black dark:text-white mb-5">
                   {group.category}
                 </h3>
+
                 <div className="grid grid-cols-3 gap-4">
                   {group.skills.map((skill, i) => (
                     <div
                       key={i}
                       className="flex flex-col items-center gap-2 group"
                     >
-                      <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-white dark:bg-white/10 border border-gray-100 dark:border-gray-700 group-hover:border-green-400 transition-colors duration-300 p-1">
+                      <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-white dark:bg-white/10 border border-gray-100 dark:border-gray-700 group-hover:border-green-400 transition-colors duration-300 p-1"
+                      >
                         <img
                           src={skill.icon}
                           alt={skill.name}
@@ -127,6 +171,7 @@ const Skills = () => {
                           }`}
                         />
                       </div>
+
                       <span className="text-[11px] text-gray-500 dark:text-gray-400 text-center leading-tight">
                         {skill.name}
                       </span>
