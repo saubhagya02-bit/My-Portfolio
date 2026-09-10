@@ -1,7 +1,7 @@
 import ScrollReveal from "../animations/ScrollReveal";
 
 const blogs = [
-    {
+  {
     title: "Mastering Docker for Node.js",
     description:
       "A Complete Guide to Optimizing Node.js Docker Images with Multi-Stage Builds, Nginx Reverse Proxy, and AWS EC2 Free Tier Hosting.",
@@ -59,7 +59,6 @@ const Blogs = () => {
                 </div>
 
                 <div className="p-5 flex flex-col flex-1">
-                  {/* Date & Read time */}
                   <div className="flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500 mb-3">
                     <span>{blog.date}</span>
                     <span>•</span>
@@ -76,13 +75,14 @@ const Blogs = () => {
                     {blog.description}
                   </p>
 
-                  {/* Read more */}
-                  <button
-                    onClick={() => window.open(blog.link, "_blank")}
+                  <a
+                    href={blog.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-black dark:text-white hover:text-green-500 dark:hover:text-green-400 transition"
                   >
                     Read more →
-                  </button>
+                  </a>
                 </div>
               </div>
             </ScrollReveal>
@@ -91,14 +91,14 @@ const Blogs = () => {
 
         <ScrollReveal>
           <div className="text-center mt-12">
-            <button
-              onClick={() =>
-                window.open("https://medium.com/@saubhagyaushani03", "_blank")
-              }
-              className="px-8 py-3 rounded-xl border border-gray-300 dark:border-gray-700 text-black dark:text-white text-sm font-medium hover:border-green-500 dark:hover:border-green-400 hover:text-green-500 dark:hover:text-green-400 transition-all duration-300"
+            <a
+              href="https://medium.com/@saubhagyaushani03"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-3 rounded-xl border border-gray-300 dark:border-gray-700 text-black dark:text-white text-sm font-medium hover:border-green-500 dark:hover:border-green-400 hover:text-green-500 dark:hover:text-green-400 transition-all duration-300"
             >
               View All Posts
-            </button>
+            </a>
           </div>
         </ScrollReveal>
       </div>
