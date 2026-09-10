@@ -6,11 +6,12 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 const projects = [
   {
     title: "HireSense",
-    description: "An AI-powered interview preparation platform that helps users practice interviews, improve skills and build confidence.",
+    description:
+      "An AI-powered interview preparation platform that helps users practice interviews, improve skills and build confidence.",
     image: "/HireSense.png",
     github: "https://github.com/saubhagya02-bit/HireSense",
   },
-   {
+  {
     title: "InkSpire",
     description: "A DevOps-Based Microservices Blogging Platform.",
     image: "/InkSpire.png",
@@ -48,15 +49,19 @@ const projects = [
     description: "A Full-Stack Healthcare Management System.",
     image: "/Healix.png",
     github: "https://github.com/saubhagya02-bit/Healix",
-  }
+  },
 ];
 
 const Projects = () => {
   const [current, setCurrent] = useState(0);
 
-  const nextSlide = () => setCurrent((prev) => (prev + 1) % projects.length);
+  const nextSlide = () =>
+    setCurrent((prev) => (prev + 1) % projects.length);
+
   const prevSlide = () =>
-    setCurrent((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
+    setCurrent((prev) =>
+      prev === 0 ? projects.length - 1 : prev - 1
+    );
 
   const project = projects[current];
 
@@ -105,14 +110,15 @@ const Projects = () => {
               </p>
 
               {/* GitHub link */}
-
-              <button
-                onClick={() => window.open(project.github, "_blank")}
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-black dark:text-white hover:text-green-500 dark:hover:text-green-400 transition"
               >
                 <FaGithub size={16} />
                 GitHub Repo
-              </button>
+              </a>
             </div>
           </div>
 
@@ -133,6 +139,7 @@ const Projects = () => {
           >
             <FiChevronLeft size={20} />
           </button>
+
           <button
             onClick={nextSlide}
             className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-black dark:text-white"
