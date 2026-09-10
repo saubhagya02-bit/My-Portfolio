@@ -5,6 +5,18 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const projects = [
   {
+    title: "HireSense",
+    description: "An AI-powered interview preparation platform that helps users practice interviews, improve skills and build confidence.",
+    image: "/HireSense.png",
+    github: "https://github.com/saubhagya02-bit/HireSense",
+  },
+   {
+    title: "InkSpire",
+    description: "A DevOps-Based Microservices Blogging Platform.",
+    image: "/InkSpire.png",
+    github: "https://github.com/saubhagya02-bit/Inkspire",
+  },
+  {
     title: "MERN E-Commerce Web Application",
     description:
       "Full-stack e-commerce application with authentication and payment integration.",
@@ -26,29 +38,17 @@ const projects = [
     github: "https://github.com/saubhagya02-bit/MindBot",
   },
   {
-    title: "InkSpire",
-    description: "A DevOps-Based Microservices Blogging Platform.",
-    image: "/InkSpire.png",
-    github: "https://github.com/saubhagya02-bit/Inkspire",
-  },
-  {
     title: "ChatSphere",
     description: "Real-time chat app using WebSockets and modern UI.",
     image: "/ChatSphere.png",
     github: "https://github.com/saubhagya02-bit/ChatSphere",
   },
   {
-    title: "Reservation System",
-    description: "Full-stack room booking platform.",
-    image: "/Reservation.png",
-    github: "https://github.com/saubhagya02-bit/Reservation-System",
-  },
-  {
-    title: "HireSense",
-    description: "An AI-powered interview preparation platform that helps users practice interviews, improve skills and build confidence.",
-    image: "/HireSense.png",
-    github: "https://github.com/saubhagya02-bit/HireSense",
-  },
+    title: "Healix",
+    description: "A Full-Stack Healthcare Management System.",
+    image: "/Healix.png",
+    github: "https://github.com/saubhagya02-bit/Healix",
+  }
 ];
 
 const Projects = () => {
