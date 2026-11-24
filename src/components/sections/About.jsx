@@ -71,7 +71,7 @@ const About = () => {
 
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                   Developing responsive, end-to-end web applications using
-                  React, JavaScript, TypeScript, Node.js, Express.js, Java, and
+                  React, JavaScript, TypeScript, Node.js, Express.js, Python, Java, and
                   Spring Boot, with experience in MongoDB, MySQL, and
                   PostgreSQL.
                 </p>
