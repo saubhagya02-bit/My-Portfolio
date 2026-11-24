@@ -2,13 +2,14 @@ import ScrollReveal from "../animations/ScrollReveal";
 
 const blogs = [
   {
-    title: "Mastering Docker for Node.js",
+    title:
+      "Making AI Smarter with Your Data: Understanding Retrieval-Augmented Generation",
     description:
-      "A Complete Guide to Optimizing Node.js Docker Images with Multi-Stage Builds, Nginx Reverse Proxy, and AWS EC2 Free Tier Hosting.",
-    image: "/Docker.jpg",
-    date: "Sep 14, 2025",
-    readTime: "3 min read",
-    link: "https://medium.com/@saubhagyaushani03/mastering-docker-for-node-js-2e6b79e2f9c1",
+      "A beginner-friendly technical article exploring Retrieval-Augmented Generation (RAG), its architecture, embeddings, vector databases, and how it enables LLMs to generate context-aware responses using external knowledge.",
+    image: "/RAG.jpeg",
+    date: "Nov 23, 2026",
+    readTime: "11 min read",
+    link: "https://medium.com/@saubhagyaushani03/making-ai-smarter-with-your-data-understanding-retrieval-augmented-generation-0d81e34f29c5",
   },
   {
     title: "REST API Design Best Practices Most Developers Still Get Wrong",
