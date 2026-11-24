@@ -13,7 +13,8 @@ const Hero = () => {
         <div>
           <FadeIn>
             <span className="inline-block bg-green-500/10 text-green-500 px-4 py-1.5 rounded-full text-sm font-medium">
-              Software Engineering Undergraduate | Full Stack & DevOps
+              Software Engineering Undergraduate | Full-Stack Developer | AI/ML
+              Enthusiast
             </span>
           </FadeIn>
 
@@ -29,11 +30,13 @@ const Hero = () => {
 
           <FadeIn delay={400}>
             <p className="text-gray-600 dark:text-gray-400 mt-6 max-w-xl text-base md:text-lg leading-relaxed">
-              I’m a Software Engineering undergraduate passionate about building
-              modern full-stack applications and scalable backend systems.
-              I work with React, TypeScript, Node.js, Java, and Spring Boot,
-              while exploring Docker, AWS, CI/CD, and cloud technologies to
-              build reliable software.
+              I'm a Software Engineering undergraduate passionate about building
+              innovative software solutions. My primary focus is Full-Stack
+              Development, with interests in AI/ML, and DevOps. I work with
+              React, JavaScript, TypeScript, Node.js, Java, Spring Boot, and
+              Python, while exploring LLMs, RAG, Docker, CI/CD, and cloud
+              technologies to develop intelligent, secure, and scalable
+              applications.
             </p>
           </FadeIn>
 
