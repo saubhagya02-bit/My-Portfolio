@@ -106,7 +106,7 @@ const skillsData = [
       },
       {
         name: "AWS",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+        icon: "https://cdn.simpleicons.org/amazonaws/FF9900",
       },
       {
         name: "VS Code",
