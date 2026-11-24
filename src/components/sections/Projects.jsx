@@ -12,6 +12,19 @@ const projects = [
     github: "https://github.com/saubhagya02-bit/HireSense",
   },
   {
+    title: "MindBot",
+    description:
+      "A smart chatbot web app that allows users to interact, ask questions, and get instant responses in a clean interface.",
+    image: "/MindBot.png",
+    github: "https://github.com/saubhagya02-bit/MindBot",
+  },
+  {
+    title: "ChatSphere",
+    description: "Real-time chat app using WebSockets and modern UI.",
+    image: "/ChatSphere.png",
+    github: "https://github.com/saubhagya02-bit/ChatSphere",
+  },
+  {
     title: "InkSpire",
     description: "A DevOps-Based Microservices Blogging Platform.",
     image: "/InkSpire.png",
@@ -32,19 +45,6 @@ const projects = [
     github: "https://github.com/saubhagya02-bit/ReserveX",
   },
   {
-    title: "MindBot",
-    description:
-      "A smart chatbot web app that allows users to interact, ask questions, and get instant responses in a clean interface.",
-    image: "/MindBot.png",
-    github: "https://github.com/saubhagya02-bit/MindBot",
-  },
-  {
-    title: "ChatSphere",
-    description: "Real-time chat app using WebSockets and modern UI.",
-    image: "/ChatSphere.png",
-    github: "https://github.com/saubhagya02-bit/ChatSphere",
-  },
-  {
     title: "Healix",
     description: "A Full-Stack Healthcare Management System.",
     image: "/Healix.png",
@@ -55,13 +55,10 @@ const projects = [
 const Projects = () => {
   const [current, setCurrent] = useState(0);
 
-  const nextSlide = () =>
-    setCurrent((prev) => (prev + 1) % projects.length);
+  const nextSlide = () => setCurrent((prev) => (prev + 1) % projects.length);
 
   const prevSlide = () =>
-    setCurrent((prev) =>
-      prev === 0 ? projects.length - 1 : prev - 1
-    );
+    setCurrent((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
 
   const project = projects[current];
 
